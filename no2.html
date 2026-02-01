@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Last Warning 😤</title>
+  <style>
+    body {
+      height: 100vh;
+      background: #111;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-family: Poppins, sans-serif;
+      color: white;
+    }
+
+    .box {
+      text-align: center;
+    }
+
+    button {
+      padding: 12px 22px;
+      margin: 10px;
+      border: none;
+      border-radius: 20px;
+      font-size: 16px;
+      cursor: pointer;
+      position: absolute;
+    }
+
+    .yes {
+      background: #ff4d6d;
+      color: white;
+      position: static;
+    }
+
+    .no {
+      background: gray;
+    }
+  </style>
+</head>
+<body>
+
+<div class="box">
+  <h2>Don’t you dare say NO 😈</h2>
+  <button class="yes" onclick="alert('I knew it ❤️🔥')">Yes</button>
+  <button class="no" onmouseover="run(this)">No</button>
+</div>
+
+<script>
+  function run(btn) {
+    btn.style.left = Math.random() * 80 + "vw";
+    btn.style.top = Math.random() * 80 + "vh";
+  }
+</script>
+
+</body>
+</html>
